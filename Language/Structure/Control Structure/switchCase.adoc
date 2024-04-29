@@ -32,14 +32,17 @@ verwendet wird, führt `switch case` alle Statements aus, bis ein link:../break[
 [source,arduino]
 ----
 switch (var) {
-  case label1:
+  case label1: {
     // Statement(s)
+    }
     break;
-  case label2:
+  case label2: {
     // Statement(s)
+    }
     break;
-  default:
+  default: {
     // Statement(s)
+    }
     break; // Wird nicht benötigt, wenn Statement(s) vorhanden sind
 }
 ----
@@ -73,15 +76,18 @@ Das Code-Beispiel zeigt die Verwendung des switch-case-Statements.
 [source,arduino]
 ----
 switch (var) {
-  case 1:
+  case 1: {
     // Tue etwas, wenn "var" 1 ist
+    }
     break;
-  case 2:
+  case 2: {
     // Tue etwas, wenn "var" 2 ist
+    }
     break;
-  default:
+  default: {
     // Tue etwas, im Defaultfall
     // Dieser Fall ist optional
+   }
     break; // Wird nicht benötigt, wenn Statement(s) vorhanden sind
 }
 ----
